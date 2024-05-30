@@ -119,6 +119,10 @@ input:valid ~ .floating-label {
   gap: 20px;
 }
 
+.dropdown i {
+  transform: none;
+}
+
 .from-container,
 .to-container {
   display: flex;
@@ -155,7 +159,7 @@ button:hover {
   background-color: #f8fd67;
   border-radius: 20px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 1.4rem;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -167,4 +171,31 @@ button:hover {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    font-size: 1.2rem;
+  }
+
+  .output {
+    font-size: 1rem;
+  }
+
+  .dropdown i {
+    transform: rotate(90deg);
+  }
+
+  .select-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
