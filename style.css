@@ -199,3 +199,14 @@ button:hover {
     align-items: center;
   }
 }
+
+@media screen and (max-width: 430px) {
+  .floating-label {
+    font-size: 15px;
+  }
+  input:focus ~ .floating-label,
+  input:valid ~ .floating-label {
+    font-size: 10px;
+    top: 7px;
+  }
+}
